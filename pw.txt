@@ -1,0 +1,2 @@
+#user	(tab) pass
+user	pass

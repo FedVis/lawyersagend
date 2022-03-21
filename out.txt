@@ -1,0 +1,6 @@
+CREATE TABLE Cause (id_cau INTEGER PRIMARY KEY , id_cli , id_col , id_giu ,  NRG UNIQUE, Oggetto , Controparte, Sezione default '_', Giudice default '_', Archivio, Stato not null default 'aperta' );
+CREATE TABLE Clienti (id_cli INTEGER PRIMARY KEY , Cognome , Nome , data_nasc , luogo_nasc , prov_nasc , Cod_Fis , Indirizzo , Cap , Citta , Prov , Tel , Tel2 , Cell , Cell2 , E_mail , E_mail2 , fax );
+CREATE TABLE Colleghi (id_col INTEGER PRIMARY KEY , titolo , contatti , Indirizzo , Cap , Citta , Prov , Tel , Tel2 , Cell , Cell2 , E_mail , E_mail2 , fax );
+CREATE TABLE Giudici (id_giu INTEGER PRIMARY KEY  , Autorita , citta , prov , indirizzo );
+CREATE TABLE Scadenze (id_sca INTEGER PRIMARY KEY , id_cau , data , descrizione not null default '_');
+CREATE TABLE Udienze (id_udi INTEGER PRIMARY KEY , id_cau , data, descrizione not null default '_' );
