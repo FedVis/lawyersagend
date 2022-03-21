@@ -1,4 +1,4 @@
-# lawyersagend
+# lawyersagenda
 This is a simple full stack development work for creating a web interface that manage a lawyer addressbook and agend.
 Written in python 2.7 in 2006 about this project is a webserver (serv6.py) made by modify the webserver class provided by python.
 The web server call functions in CLEG.py to dinamically build webpages from datas in a sqlite db.... 
